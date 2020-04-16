@@ -1,0 +1,10 @@
+--- linux-5.4-rc6/drivers/media/pci/Makefile	2019-11-03 22:07:26.000000000 +0000
++++ linux-5.4-rc6/drivers/media/pci/Makefile	2019-11-10 21:00:25.837099656 +0000
+@@ -15,6 +15,7 @@
+ 		saa7146/	\
+ 		smipcie/	\
+ 		netup_unidvb/	\
++		tbsecp3/	\
+ 		intel/
+ 
+ obj-$(CONFIG_VIDEO_IVTV) += ivtv/

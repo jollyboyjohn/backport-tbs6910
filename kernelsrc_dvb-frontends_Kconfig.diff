@@ -1,0 +1,16 @@
+--- linux-5.4-rc6/drivers/media/dvb-frontends/Kconfig	2019-11-03 22:07:26.000000000 +0000
++++ linux-5.4-rc6/drivers/media/dvb-frontends/Kconfig	2019-11-10 20:59:12.988388422 +0000
+@@ -65,6 +65,13 @@
+ 
+ 	  Say Y when you want to support these frontends.
+ 
++config DVB_TAS2101
++       tristate "Tmax TAS2101 based"
++       depends on DVB_CORE && I2C
++       default m if !MEDIA_SUBDRV_AUTOSELECT
++       help
++         Say Y when you want to support this frontend.
++
+ config DVB_M88DS3103
+ 	tristate "Montage Technology M88DS3103"
+ 	depends on DVB_CORE && I2C && I2C_MUX

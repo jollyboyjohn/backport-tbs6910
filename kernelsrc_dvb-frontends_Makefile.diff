@@ -1,0 +1,10 @@
+--- linux-5.3.1/drivers/media/dvb-frontends/Makefile	2019-09-21 06:19:47.000000000 +0100
++++ linux-5.3.1.new/drivers/media/dvb-frontends/Makefile	2019-09-22 14:25:23.152216367 +0100
+@@ -126,6 +126,7 @@
+ obj-$(CONFIG_DVB_AS102_FE) += as102_fe.o
+ obj-$(CONFIG_DVB_GP8PSK_FE) += gp8psk-fe.o
+ obj-$(CONFIG_DVB_TC90522) += tc90522.o
++obj-$(CONFIG_DVB_TAS2101) += tas2101.o
+ obj-$(CONFIG_DVB_MN88443X) += mn88443x.o
+ obj-$(CONFIG_DVB_HORUS3A) += horus3a.o
+ obj-$(CONFIG_DVB_ASCOT2E) += ascot2e.o

@@ -1,0 +1,10 @@
+--- linux-5.3.1/drivers/media/tuners/Makefile	2019-09-21 06:19:47.000000000 +0100
++++ linux-5.3.1.new/drivers/media/tuners/Makefile	2019-09-22 14:25:23.182215896 +0100
+@@ -43,6 +43,7 @@
+ obj-$(CONFIG_MEDIA_TUNER_QM1D1C0042) += qm1d1c0042.o
+ obj-$(CONFIG_MEDIA_TUNER_QM1D1B0004) += qm1d1b0004.o
+ obj-$(CONFIG_MEDIA_TUNER_M88RS6000T) += m88rs6000t.o
++obj-$(CONFIG_MEDIA_TUNER_AV201X) += av201x.o
+ obj-$(CONFIG_MEDIA_TUNER_TDA18250) += tda18250.o
+ 
+ ccflags-y += -I$(srctree)/drivers/media/dvb-frontends

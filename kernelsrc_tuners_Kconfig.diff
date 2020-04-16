@@ -1,0 +1,15 @@
+--- linux-5.4-rc6/drivers/media/tuners/Kconfig	2019-11-03 22:07:26.000000000 +0000
++++ linux-5.4-rc6/drivers/media/tuners/Kconfig	2019-11-10 20:58:21.319302497 +0000
+@@ -296,4 +296,12 @@
+ 	default m if !MEDIA_SUBDRV_AUTOSELECT
+ 	help
+ 	  Sharp QM1D1B0004 ISDB-S tuner driver.
++
++config MEDIA_TUNER_AV201X
++       tristate "Airoha Technology AV201x silicon tuner"
++       depends on MEDIA_SUPPORT && I2C
++       default m if !MEDIA_SUBDRV_AUTOSELECT
++       help
++         Airoha Technology AV201x silicon tuner driver.
++
+ endmenu

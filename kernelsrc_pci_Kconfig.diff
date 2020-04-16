@@ -1,0 +1,10 @@
+--- linux-5.4-rc6/drivers/media/pci/Kconfig	2019-11-03 22:07:26.000000000 +0000
++++ linux-5.4-rc6/drivers/media/pci/Kconfig	2019-11-10 21:00:10.537370324 +0000
+@@ -52,6 +52,7 @@
+ source "drivers/media/pci/ddbridge/Kconfig"
+ source "drivers/media/pci/smipcie/Kconfig"
+ source "drivers/media/pci/netup_unidvb/Kconfig"
++source "drivers/media/pci/tbsecp3/Kconfig"
+ endif
+ 
+ source "drivers/media/pci/intel/ipu3/Kconfig"
